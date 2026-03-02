@@ -7,7 +7,7 @@
 The database implements a simple movie rental system like the company Blockbuster might have maintained (before Netflix killed them).
 The following picture illustrates the database's structure:
 
-<img src=dvd-rental-sample-database-diagram.png width=80% />
+<img src="https://raw.githubusercontent.com/jessiek37185/pagila-hw/main/dvd-rental-sample-database-diagram.png" width="80%" />
 
 ## Tasks
 
