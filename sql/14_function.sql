@@ -5,7 +5,12 @@
 
 CREATE OR REPLACE FUNCTION list_category(TEXT) RETURNS TABLE(title TEXT) AS
 $$
--- FIXME: implementation goes here
+SELECT DISTINCT(film.title)
+FROM category, film_category, film
+WHERE film_category.film_id = film.film_id 
+AND film_category.category_id = category.category_id
+AND category.name = $1
+ORDER BY film.title ASC;
 $$
 LANGUAGE SQL
 IMMUTABLE
